@@ -93,7 +93,7 @@ class Handler : IHandler
         }
       }
     }
-    catch (TaskCanceledException e)
+    catch (TaskCanceledException)
     {
       _logger.LogWarning("Finishing attempts to get application statuses because of cancellation requested");
 
